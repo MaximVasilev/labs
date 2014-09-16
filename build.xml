@@ -4,10 +4,16 @@
   <property name="build.dir" location="bin" />
   <property name="dist.dir" location="dist" />
   <property name="source.lab1" location="src/lab1" />
+  <property name="source.lab2" location="src/lab2" />
+  <property name="source.lab3" location="src/lab3" />
   <property name="build.path" location="bin"/>
 
   <target name="compile">
     <javac srcdir="${source.lab1}" destdir="${build.path}/lab1">
+    </javac>
+    <javac srcdir="${source.lab2}" destdir="${build.path}/lab2">
+    </javac>
+    <javac srcdir="${source.lab3}" destdir="${build.path}/lab3">
     </javac>
   </target>
 
@@ -15,6 +21,16 @@
     <jar destfile="caesar.jar" basedir="${build.dir}/lab1">
       <manifest>
         <attribute name="Main-Class" value="lab1.Caesar_and_Viginer" />
+      </manifest>
+    </jar>
+    <jar destfile="des.jar" basedir="${build.dir}/lab2">
+      <manifest>
+        <attribute name="Main-Class" value="lab2.CipherDES" />
+      </manifest>
+    </jar>
+    <jar destfile="lsb.jar" basedir="${build.dir}/lab3">
+      <manifest>
+        <attribute name="Main-Class" value="lab3.LSBMain" />
       </manifest>
     </jar>
   </target>

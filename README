@@ -1,0 +1,15 @@
+1. console IO 
+    java -jar caesar.jar caesar text 2(shift, int number)
+    java -jar caesar.jar viginer text shift(text string)
+for files
+    java -jar caesar.jar caesar -f inputfile outfile 2(shift, int number)
+    java -jar caesar.jar viginer -f inputfile outfile shift(text string)
+
+2.  java -jar des.jar encrypt key.txt in.txt out.txt
+    java -jar des.jar decrypt key.txt in.txt out.txt
+    input and key must be >= 8 chars
+
+3.  java -jar lsb.jar inside container.bmp hidefile
+    java -jar lsb.jar outside container.bmp hidefile
+
+

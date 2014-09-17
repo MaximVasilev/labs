@@ -18,8 +18,6 @@ import java.io.Writer;
 import java.sql.Savepoint;
 import java.util.Locale;
 
-import com.sun.imageio.*;
-import com.sun.imageio.plugins.jpeg.*;
 
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
@@ -69,7 +67,7 @@ class LSB{
 		RandomAccessFile secret = new RandomAccessFile(hideName, "r");
 		long contLen=container.length();
 		long secretLen=secret.length();
-		long needLen=secretLen*8+4*8+54; //содержимое секрет, + его длина, + хедер BMP
+		long needLen=secretLen*8+4*8+54;
 		secret.close();
 		container.close();
 		if (needLen<contLen)

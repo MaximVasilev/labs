@@ -9,6 +9,9 @@
   <property name="build.path" location="bin"/>
 
   <target name="compile">
+    <mkdir dir="${build.path}/lab1"/>
+    <mkdir dir="${build.path}/lab2"/>
+    <mkdir dir="${build.path}/lab3"/>
     <javac srcdir="${source.lab1}" destdir="${build.path}/lab1">
     </javac>
     <javac srcdir="${source.lab2}" destdir="${build.path}/lab2">
